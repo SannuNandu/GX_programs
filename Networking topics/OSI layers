@@ -1,0 +1,90 @@
+Physical Layer (Layer 1)
+    Function: The Physical layer deals with the actual hardware transmission of raw data over physical mediums like cables, radio waves, or fiber optics. It defines the hardware elements, electrical signals, and data encoding used for transmission.
+    Examples:
+        Ethernet cables (Cat 5, Cat 6).
+        Fiber optic cables.
+        Wireless signals (Wi-Fi, Bluetooth).
+    Explanation: This is the layer where the actual transmission of 1s and 0s happens, whether it's through copper cables, fiber optics, or wireless signals. It’s like the "street" where cars (data) move, but without traffic signals or rules.
+Scenario:Sending Data Over Wi-Fi (e.g., Sending a Message in WhatsApp)
+When you send a message over WhatsApp while connected to Wi-Fi, the Physical Layer is responsible for the actual transmission of data between your device and the Wi-Fi router, using radio waves.
+Converts Data into Signals: The Physical Layer takes the data (your WhatsApp message) and converts it into a form that can travel over the network, such as radio waves or electrical signals.
+Transmits Data: It transmits the data through the air (Wi-Fi) or through cables (Ethernet) to the next device or router.
+Ensures Transmission: It ensures that the data is physically transmitted across the network medium (Wi-Fi radio signals or Ethernet cables) to reach its destination.
+
+
+
+Data Link Layer (Layer 2)
+    Function: The Data Link layer is responsible for the physical transmission of data on the network. It handles the communication between two devices on the same network and ensures error-free data transfer over the physical medium.
+    Examples:
+        Ethernet (used in LANs).
+        Wi-Fi (used in wireless networks).
+        MAC (Media Access Control) addresses to identify devices on a local network.
+ Scenario: Sending a file from your computer to a friend’s computer over the internet
+Communication within a local network (Data Link Layer)
+    You are connected to Wi-Fi at your home.
+    You decide to send a file from your computer to your friend, who is sitting next to you in the same room, and both of you are connected to the same Wi-Fi network.
+
+
+
+ Network Layer (Layer 3):The Network layer determines the best path for the data to take to reach its destination, considering factors like traffic, congestion, and distance.
+Examples:
+    Internet Protocol (IP), which provides logical addressing (IP addresses) and routing.
+    Routers use IP addresses to route data across networks.
+Scenario:Your email is converted into smaller pieces of data called packets. Each packet contains part of the email content.
+Role of the Network Layer: The Network Layer is responsible for addressing each packet. It adds IP (Internet Protocol) addresses to each packet, ensuring that the email reaches the right destination.
+Routing the Data:
+    What happens: The email packets start traveling from your computer to the email server, and then from the email server to your friend’s email server, and eventually to their device.
+    Role of the Network Layer: The Network Layer is responsible for routing the packets across different routers and networks.
+    Reaching the Destination:
+    What happens: The email packets eventually reach the recipient's email server (your friend's server).
+    Role of the Network Layer: At this stage, the Network Layer ensures that the email packets are forwarded correctly to your friend’s device (like their computer or smartphone).
+    
+    
+
+ Transport Layer (Layer 4):It is responsible for making sure that data can be sent correctly and reliably(Reliable Data Transfer means ensuring that data sent from one device to another is accurately received without any loss or errors, in the correct order. ) from one device to another across different networks .
+ Here's what makes data transfer reliable:
+    Error Detection and Correction:
+        If data gets corrupted (say due to interference or network issues), the Transport Layer ensures that the error is detected and corrected, often by asking for the lost or damaged data to be retransmitted.
+    Data Acknowledgement:
+        The system receiving data will send an acknowledgment back to the sender to confirm that the data has been successfully received. If the sender doesn't get the acknowledgment, it will resend the data.
+    Flow Control:
+        This mechanism ensures that the sender doesn’t overwhelm the receiver by sending too much data too quickly. It ensures the receiver can process the data as fast as it's being sent.
+    Sequencing:
+        If data is split into smaller chunks (called packets or segments), the Transport Layer ensures they are sent in the correct order. If the segments arrive out of order, they are reassembled into the proper sequence.
+        example:Transmission Control Protocol (TCP)
+                User Datagram Protocol (UDP)
+Scenario:Communication over the internet (Transport Layer)
+    Now, let’s say your friend’s computer is in another city or across the world.
+    You decide to send the same file to them over the internet using a file-sharing app or email.
+
+
+
+session layer(Layer 5): Starting the Conversation: Before two devices can send data back and forth, the Session layer helps them set up a "session" or "connection" between them.
+Keeping the Conversation Going: While they are talking (sending and receiving data), the Session layer ensures that both devices are in sync. If you’re sending a file, for example, the Session layer makes sure that the connection stays active and data flows without interruptions.
+
+Ending the Conversation: Once the data transfer is done, the Session layer also helps both devices close the connection properly, making sure that both sides know when the conversation is finished.
+example:Video Call Between Two People (e.g., Zoom, Skype, or Teams)
+
+
+
+presentation layer(layer 6):----->translator, data converter.
+Data Translation: Different devices or applications might use different formats for data. The Presentation Layer converts this data into a common format, so both devices can read it. For example, one computer might send data in one character encoding format (like ASCII), while the other might use a different format (like Unicode). The Presentation Layer helps translate it so both devices understand each other.
+Data Compression: Sometimes, data can be very large. The Presentation Layer can compress the data to make it smaller, so it’s easier and faster to send over the network.
+Data Encryption: For security reasons, data can be encrypted (scrambled) to protect it from unauthorized access. The Presentation Layer is responsible for encrypting the data before sending it and decrypting it when it is received.
+Scenario:Presentation Layer's Role in WhatsApp Messaging:
+    Formatting: Converts text into a standardized format (UTF-8, for example) and handles image/video compression.
+    Encryption: Ensures the message is encrypted so only the recipient can read it.
+    Compression: Reduces the size of large files (like videos) to make sending faster and more efficient.
+
+
+
+application layer(layer 7): is the topmost layer in the OSI model, and it’s the one closest to the end user. It’s the layer that interacts directly with software applications to help them communicate over a network.
+examples:HTTP (for websites)
+SMTP (for sending emails)
+FTP (for transferring files)
+role:The Application Layer is the layer closest to you, the user. It allows you to interact with the application. 
+Scenario:The Application Layer is the layer where you interact directly with the system (via a browser or other software). It’s responsible for formatting requests (e.g., asking for a website), receiving data, and displaying it to you in a way that makes sense (like showing you Google’s homepage when you type in the URL).
+
+
+
+

@@ -1,0 +1,29 @@
+*********IP Adddress******************
+An IP address (Internet Protocol address) is a unique identifier assigned to every device that connects to a network .
+Identification: It identifies the device on the network, much like how a street address identifies your house.
+Location Addressing: It tells where the device is located in the network, enabling other devices to send data to the correct destination.
+********************Types of IP Addresses:**********************
+********************1. IPv4 (Internet Protocol version 4)******************
+It uses a 32-bit number to represent an address.IPv4 can accommodate around 4.3 billion unique addresses, which seemed sufficient when the internet was first created, but with the growth of devices, IPv4 addresses have become limited.
+Example: 192.168.1.1
+**********************2. IPv6 (Internet Protocol version 6)***********************
+It uses a 128-bit address.IPv6 can accommodate about 340 undecillion unique addresses.IPv6 addresses are written in hexadecimal (base 16), with groups of four hexadecimal digits separated by colons.
+Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+****************1.Private IP Address:******************
+A private IP address is used for devices within a local network (LAN), and it cannot be accessed directly from the internet.These addresses are commonly used by routers to assign to devices like computers, printers, and phones in a home or office network.
+    Common Private IP Address Ranges:
+        10.0.0.0 to 10.255.255.255
+        172.16.0.0 to 172.31.255.255
+        192.168.0.0 to 192.168.255.255
+        
+How Can Devices with Private IPs Access the Internet?
+via *************NAT(Network Address Translation)*****************:It performs translations between the private and public IP address.
+How NAT Works:
+    When a device inside the private network (let’s say, a computer with the IP 192.168.1.10) tries to access a website, the request is sent to the router.
+    The router replaces the private IP address in the request with its own public IP address (e.g., 203.0.113.5).
+    When the website sends data back, the router knows which internal device made the request (via NAT tables), and it forwards the response to the correct private IP.
+
+********************2.Public IP Address*********************
+A public IP address is assigned to a device that is directly connected to the internet. It’s unique across the entire internet.
+    Example: A website’s server or your home router’s external IP address.

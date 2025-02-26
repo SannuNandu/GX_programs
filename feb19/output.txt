@@ -1,0 +1,12 @@
+apple
+grape
+lemon
+zebra
+river
+water
+alpha
+omega
+smith
+charm
+apple
+field

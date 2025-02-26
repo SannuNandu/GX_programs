@@ -1,0 +1,76 @@
+Networking:
+
+
+****************what is a network?***************
+A network is a group of two or more devices (computers, printers, servers, etc.) connected together so that they can share data.
+
+
+****************Types of Networks********************
+      PAN (Personal Area Network): A very small network, often used to connect devices like    smartphones, laptops, or Bluetooth peripherals.<-examples.
+    PAN offers a network range of 1 to 100 meters.
+    Its transmission speed is very high.
+    Types of PAN:
+    Wireless Personal Area Networks: Wireless Personal Area Networks are created by simply utilising wireless technologies such as WiFi and Bluetooth. It is a low-range network.
+    Wired Personal Area Network: A wired personal area network is constructed using a USB.
+
+    LAN (Local Area Network): A network that covers a small geographic area, like a home or office. It typically uses Ethernet or Wi-Fi for connectivity..
+     It ranges up to 2km & transmission speed is very high 
+    Eg:Home and office networks.
+    
+     MAN (Metropolitan Area Network): A network that covers a larger geographic area than a LAN but smaller than a WAN, such as a city or a campus.
+    ranges from 5km to 50km. Its transmission speed is average.
+    Example:University Campus Network: A university with multiple buildings across a city could have a MAN that links the campus buildings, enabling high-speed internet access and communication across all departments and facilities within the city.
+    
+    
+    WAN (Wide Area Network): A network that spans a large geographic area, often across cities, countries, or continents.
+    range above 50km.Its transmission speed is very low.
+    Eg: The Internet is the largest WAN, Corporate Networks: Large corporations with multiple offices across different cities or countries often set up WANs to connect their various office locations.
+    
+   
+*******************NETWORK COMPONENTS******************
+1.Hub:A hub is a basic networking device that connects multiple devices in LAN.When one device sends data to the network,the hub broadcasts the data to all other connected devices,regardless of whether they need it or not.
+limitations:inefficient because it sends data to all the devices at once.
+             No security.
+ Example: Older networks often used hubs before switches became more common.
+             
+2.Switch:A switch is a more advanced and efficient version of a hub. Like a hub, it connects devices within a LAN, but instead of broadcasting data to all devices, it only sends the data to the specific device it's intended for.
+A switch is a data link layer device. 
+The switch learns the MAC addresses of the devices connected to it, and keeps a table (called a MAC address table) of where each device is located.
+The switch can perform error checking before forwarding data, which makes it very efficient as it does not forward packets that have errors and forward good packets selectively to the correct port only.
+Advantages:More efficient,Improved security.
+Example: A switch used in a company office to connect multiple computers.
+
+3.Router:A router connects different networks together, such as connecting a home or office(LAN) network to the internet(WAN).It directs data packets between networks, making decisions about the best route for the data to travel.
+A Router is a device like a switch that routes data packets based on their IP addresses. The router is mainly a Network Layer device. 
+Example: Your home Wi-Fi router that connects your devices to the internet.
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
