@@ -3,8 +3,8 @@
 #include <pthread.h>
 
 void *thread_fun(void *args){
-	int thread_numbers = *((int *)args);
-	printf("Thread %d is running\n", thread_numbers);
+	int thread_num = *((int *)args);
+	printf("Thread %d is running\n", thread_num);
 	return NULL;
 }
 

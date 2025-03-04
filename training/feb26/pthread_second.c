@@ -2,8 +2,8 @@
 #include <pthread.h>
 
 void *thread_fun(void *args){
-	int number=*((int *)args);
-	printf("thread number:%d\n", number); //reads the value at the memory location pointed to by arg (which is now treated as an int*) and assigns it to the variable number
+	int num=*((int *)args);
+	printf("thread number:%d\n", num); //reads the value at the memory location pointed to by arg (which is now treated as an int*) and assigns it to the variable number
 	return NULL;
 
 }

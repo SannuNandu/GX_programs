@@ -37,17 +37,17 @@ int main(){
 	struct node *head=NULL;
 	int value;
 
-	head=insert_first(head,10);
-        head=insert_first(head,20);
-        head=insert_first(head,30);
-
+//	head=insert_first(head,10);
+  //      head=insert_first(head,20);
+    //    head=insert_first(head,30);
 	printf("enter the value:");
-	scanf("%d", &value);
+	if(scanf("%d", &value)!=1){
+		printf("invalid\n");
+	}
+	else{
         head=insert_first(head,value);
-
 	 print_list(head);
 
+	}
 	return 0;
-
-
 }

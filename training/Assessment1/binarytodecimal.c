@@ -17,9 +17,11 @@ int main(){
 	printf("enter the binary number:");
 	scanf("%d", &num);
 
-	printf("the converted number is:%d", binarytodecimal(num));
+	printf("the binary number %d is converted to decimal:%d",num, binarytodecimal(num));
 
 	return 0;
 }
+
+
 
 
